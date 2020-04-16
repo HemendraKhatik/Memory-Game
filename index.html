@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="index.js"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- Sweet alert library for pop-ups -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	<div class="container text-center">
+		<h1 class="text-success">Memory Game</h1>
+		<!-- First Division -->
+		<div class="m-4" id="first_div" style="display:block;">
+			<hr>
+			<h2>Generate random number</h2>
+			<h4 id="number"></h4>
+			<button class="btn btn-primary" id="generate" onclick="randomRange()">Generate</button>
+			<h3 id="message"></h3>
+		</div>
+		<!-- Second Division -->
+		<div class="m-4" id="Second_div" style="display:none;">
+			<h1>Guess the number</h1>
+			<hr>
+			<input class="form-control" type="text" id="userInput" placeholder="Enter Your Guess" autofocus required>
+			<br>
+			<button class="btn btn-primary" id="guess" onclick="check();">guess</button>
+			<button class="btn btn-primary" onclick="replay();">Replay</button>
+		</div>
+		<!-- logo -->
+		<img src="logo.png">
+	</div>
+</body>
+</html>
