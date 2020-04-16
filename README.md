@@ -1,4 +1,4 @@
-# PowerUp
+# Memory Game
 
 ![Home page](home_page.png)
 
@@ -11,8 +11,8 @@ This is simple Number guessing game. Play and have fun.
 * BootStrap
 * Sweet alert
 
-## PowerUp Live
-### [Click here]( https://hemendrakhatik.github.io/PowerUp/) 
+## Live
+### [Click here]( https://hemendrakhatik.github.io/Memory-Game/) 
 
 ## About Me:
 
