@@ -1,6 +1,6 @@
 # Memory Game
 
-![Home page](home_page.png)
+![Home page](./assets/images/home_page.png)
 
 
 ## About Project:
