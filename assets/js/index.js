@@ -1,8 +1,25 @@
 function randomRange() {
-  // Generating Random 6 digit number
-  const guessNumber = Math.floor(
-    Math.random() * (987666 - 456722 + 1) + 456722
-  );
+  // Getting Difficulty
+  var diff=document.getElementById('difficulty').value;
+  // Removing colorChanger class if already present
+  document.querySelector("#number").classList.remove("colorChanger");
+  var guessNumber;
+  if(diff==1){
+    // Generating Random 6 digit number
+    guessNumber = Math.floor((Math.random() * 900000 )+100000 );  
+  }
+  else if(diff==2){
+    // Generating Random 7 digit number
+    guessNumber = Math.floor((Math.random() * 9000000 )+1000000 );  
+  }
+  else if(diff==3){
+    // Generating Random 8 digit number
+    guessNumber = Math.floor((Math.random() * 90000000 )+10000000 );
+    // Adding class colorChanger to the number  
+    document.querySelector("#number").classList.add("colorChanger");
+  } 
+
+  document.getElementById('difficulty').disabled="disabled";
   // Storing generated number in local storage
   localStorage.setItem("guessNumber", guessNumber);
   // Displaying the number
@@ -68,4 +85,5 @@ function replay() {
   document.querySelector("#number").innerHTML = "";
   document.querySelector("#message").innerHTML = "";
   document.querySelector("#generate").disabled = "";
+  document.getElementById('difficulty').disabled = "";
 }
