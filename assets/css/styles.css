@@ -112,3 +112,8 @@ h1,button,#messgage{
 {
   margin:0
 }
+
+/*increase the contrast of ok button in the popup */
+.swal-button{
+  background-color: #3366cc;
+}
