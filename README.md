@@ -14,6 +14,16 @@ This is simple Number guessing game. Play and have fun.
 ## Live
 ### [Click here]( https://hemendrakhatik.github.io/Memory-Game/) 
 
+# How to make Contribution 
+
+## Steps to follow
+
+1. Make a fork.
+2. Create a new branch.
+3. Commit your changes
+4. Make your pull request
+5. Resolve conflicts if any
+
 ## About Me:
 
 [Click Here](https://hemendrakhatik.github.io/Portfolio/) to know about me.
