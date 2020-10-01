@@ -15,7 +15,12 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- Sweet alert library for pop-ups -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/dark-mode.css">
+
   </head>
   <body>
     <nav class ="navbar navbar-dark bg-dark">
@@ -26,19 +31,20 @@
       </div>
     </nav>
     <div class="container text-center">
-    <!-- First Division -->
-    <div class="m-4" id="first_div" style="display: block">
+      <h1 class="text-success">MEMORY GAME</h1>
+      <!-- First Division -->
+      <div class="m-4" id="first_div" style="display: block">
         <hr />
-        <h2>Generate random number</h2>
+        <h2>GENERATE RANDOM NUMBER</h2>
         <h4 id="number" class="unselectable"></h4>
         <button class="btn btn-primary" id="generate" onclick="randomRange()">
-          Generate
+          GENERATE 
         </button>
         <h3 id="message"></h3>
       </div>
       <!-- Second Division -->
       <div class="m-4" id="Second_div" style="display: none">
-        <h1>Guess the number</h1>
+        <h1>GUESS THE NUMBER</h1>
         <hr />
         <input
           class="form-control"
@@ -50,9 +56,9 @@
         />
         <br />
         <button class="btn btn-primary" id="guess" onclick="check();">
-          guess
+          GUESS
         </button>
-        <button class="btn btn-primary" onclick="replay();">Replay</button>
+        <button class="btn btn-primary" onclick="replay();">REPLAY</button>
       </div>
       <!-- logo -->
       <img src="./assets/images/logo.png" />
