@@ -4,7 +4,8 @@
 
 
 ## About Project:
-This is simple Number guessing game. Play and have fun.
+This is simple Sequence guessing game.Play and have fun.
+
 ## Technology Stack Used In This Project
 * HTML/CSS
 * JavaScript
@@ -13,6 +14,20 @@ This is simple Number guessing game. Play and have fun.
 
 ## Live
 ### [Click here]( https://hemendrakhatik.github.io/Memory-Game/) 
+
+# How to make Contribution 
+
+## Steps to follow
+
+1. Make a fork.
+2. Create a new branch.
+3. Commit your changes
+4. Make your pull request
+5. Resolve conflicts if any
+
+### Note 
+
+Please do not commit to master branch. please merge your branch with development branch.
 
 ## About Me:
 

@@ -15,40 +15,84 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <!-- Sweet alert library for pop-ups -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+
   </head>
   <body>
+    <nav class ="navbar navbar-dark bg-dark">
+      <h1 class="text-success text-light">Memory Game</h1>
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="darkSwitch">
+        <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+      </div>
+    </nav>
     <div class="container text-center">
-      <h1 class="text-success">Memory Game</h1>
-      <!-- First Division -->
-      <div class="m-4" id="first_div" style="display: block">
-        <hr />
-        <h2>Generate random number</h2>
-        <h4 id="number" class="unselectable"></h4>
-        <button class="btn btn-primary" id="generate" onclick="randomRange()">
-          Generate
-        </button>
-        <h3 id="message"></h3>
+      <h1 class="text-success heading">Let's test your memory</h1>
+      <div class="row align-items-center">
+          <!-- First Division -->
+          <div class="col-md-6 col-sm-12" id="first_div" style="display: block">
+            <h2>GENERATE RANDOM SEQUENCE</h2>
+            <hr />
+            <h4 id="number" class="unselectable"></h4>
+            <button class="btn btn-primary" id="generate" onclick="randomNumberOrSequence()">
+              GENERATE 
+            </button>
+            <h3 id="message"></h3>
+          </div>
+          <!-- Second Division -->
+          <div class="col-md-6 col-sm-12" id="Second_div" style="display: none">
+            <h1>GUESS THE SEQUENCE</h1>
+            <hr />
+            <input
+              class="form-control"
+              type="text"
+              id="userInput"
+              placeholder="Enter Your Guess"
+              autofocus
+              required
+            />
+            <br />
+            <button class="btn btn-primary" id="guess" onclick="check();">
+              GUESS
+            </button>
+            <button class="btn btn-primary" onclick="replay();">REPLAY</button>
+          </div>
+          <!-- logo -->
+          <img class="col-md-3 col-sm-6 offset-md-2 img-adjust" src="./assets/images/logo.png" />
       </div>
-      <!-- Second Division -->
-      <div class="m-4" id="Second_div" style="display: none">
-        <h1>Guess the number</h1>
-        <hr />
-        <input
-          class="form-control"
-          type="text"
-          id="userInput"
-          placeholder="Enter Your Guess"
-          autofocus
-          required
-        />
-        <br />
-        <button class="btn btn-primary" id="guess" onclick="check();">
-          Guess
-        </button>
-        <button class="btn btn-primary" onclick="replay();">Replay</button>
-      </div>
-      <!-- logo -->
-      <img src="./assets/images/logo.png" />
     </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">A Memory game initiated by <a href="https://github.com/HemendraKhatik">HemendraKhatik</a> and maintained by sweet group of open-source Dev's. Code repo: <u><a href="https://github.com/HemendraKhatik/Memory-Game">Just a click away</a></u></p>
+          </div>
+
+          <div class="col-xs-6 col-md-3 offset-md-3">
+            <h6>Tech Stack</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/front-end-development/">HTML/CSS</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">JS</a></li>
+              <li><a href="">Bootstrap & sweet alert</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-6 col-xs-12">
+            <p class="copyright-text">Made with Love by people for People!!!</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/dark-mode-switch.min.js"></script>
+    <script src="assets/js/dark-mode-switch.js"></script>
   </body>
 </html>
