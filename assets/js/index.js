@@ -1,3 +1,15 @@
+
+//This function will randomly choose between "randomRange()" and "randomSequence()" functions
+function randomNumberOrSequence()
+{
+    var functionArray = new Array(randomRange, randomSequence);
+   
+    var i = Math.floor(Math.random() * functionArray.length);
+    
+    functionArray[i]()
+}
+
+
 function randomRange() {
   // Generating Random 6 digit number
   const guessNumber = Math.floor(
@@ -27,6 +39,44 @@ function randomRange() {
     document.querySelector("#userInput").value = "";
   }, 5000);
 }
+
+
+function randomSequence() {
+  // Generating Random 6 digit number
+  
+   var length = 6;
+   var guessNumber           = '';
+   var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+   var charactersLength = characters.length;
+   for ( var i = 0; i < length; i++ ) {
+      guessNumber += characters.charAt(Math.floor(Math.random() * charactersLength));
+   }
+
+  // Storing generated number in local storage
+  localStorage.setItem("guessNumber", guessNumber);
+  // Displaying the number
+  document.querySelector("#number").innerHTML = guessNumber;
+  //button will be disabled after click
+  document.getElementById("generate").disabled = "diabled";
+  // Message will appear after button has clicked
+  document.querySelector("#message").innerHTML =
+    "Page will reload in 5 seconds";
+  var secondReload = 4;
+  var timer = setInterval(function () {
+    document.querySelector("#message").innerHTML =
+      "Page will reload in " + secondReload + " seconds";
+    secondReload--;
+  }, 1000);
+  secondReload = 4;
+  //toggle between two divs
+  setTimeout(function () {
+    clearInterval(timer);
+    document.querySelector("#first_div").style.display = "none";
+    document.querySelector("#Second_div").style.display = "block";
+    document.querySelector("#userInput").value = "";
+  }, 5000);
+}
+
 // Check Function to check Guess Entered by the user
 function check() {
   if (
