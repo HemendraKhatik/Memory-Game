@@ -6,3 +6,25 @@
     -ms-user-select: none;
     user-select: none;
 }
+
+h1,button,#messgage{
+    font-family: 'Francois One',sans-serif;
+}
+.custom-control-label{
+    color:white;
+}
+@media screen and (max-width:480px){
+    
+    h1{
+        font-size:1.8em;
+    }
+    #first_div{
+        margin-top:1em;
+    }
+    h2{
+        font-size: 1em;;
+    }
+    #first_div{
+        margin-top:0.5em !important;
+    }
+}
