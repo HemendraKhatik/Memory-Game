@@ -15,10 +15,21 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- Sweet alert library for pop-ups -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+
   </head>
   <body>
+    <nav class ="navbar navbar-dark bg-dark">
+      <h1 class="text-success text-light">Memory Game</h1>
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="darkSwitch">
+        <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+      </div>
+    </nav>
     <div class="container text-center">
       <h1 class="text-success">MEMORY GAME</h1>
       <!-- First Division -->
@@ -52,5 +63,7 @@
       <!-- logo -->
       <img src="./assets/images/logo.png" />
     </div>
+    <script src="assets/js/dark-mode-switch.min.js"></script>
+    <script src="assets/js/dark-mode-switch.js"></script>
   </body>
 </html>
