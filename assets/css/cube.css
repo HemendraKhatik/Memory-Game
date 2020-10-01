@@ -1,3 +1,4 @@
+
 #container {
     width: 100%;
     height: 700px;
@@ -20,21 +21,25 @@
     -webkit-transform-style: preserve-3d;
   }
   
-  .plane {
+.plane {
     position: absolute;
     height: 200px;
     width: 200px;
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     -webkit-border-radius: 12px;
     -webkit-box-sizing: border-box;
     text-align: center;
     font-family: Times, serif;
-    font-size: 124pt;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 124pt; 
+      background-color: rgba(255, 255, 255, 0.6); 
+   background-color: rgba(17, 17, 17, 0.842) ; 
+    color: rgb(255, 255, 255);
     -webkit-transition: -webkit-transform 2s, opacity 2s;
     -webkit-backface-visibility: hidden;
   }
+  
+ 
+
 
   #shape.backfaces .plane {
     -webkit-backface-visibility: visible;
@@ -164,19 +169,4 @@
   .controls > div {
     margin: 10px;
   }
-  [data-theme="dark"] {
-    background-color: #111 !important;
-    color: #eee;
-  }
-  
-  [data-theme="dark"] .bg-light {
-    background-color: #333 !important;
-  }
-  
-  [data-theme="dark"] .bg-white {
-    background-color: #000 !important;
-  }
-  
-  [data-theme="dark"] .bg-black {
-    background-color: #eee !important;
-  }
+ 

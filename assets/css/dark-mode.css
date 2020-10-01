@@ -14,3 +14,23 @@
 [data-theme="dark"] .bg-black {
   background-color: #eee !important;
 }
+[data-theme="dark"] .plane {
+  background-color: #111 !important;
+  color: #eee; 
+}
+
+[data-theme="dark"] .plane {
+  background-color: #333 !important;
+  
+}
+
+[data-theme="dark"] .plane {
+  background-color: #000 !important;
+  
+}
+
+[data-theme="dark"] .plane {
+  background-color: rgba(238, 238, 238, 0.568) !important;
+  color: rgb(0, 0, 0) !important; 
+}
+
