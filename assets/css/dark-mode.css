@@ -14,3 +14,14 @@
 [data-theme="dark"] .bg-black {
   background-color: #eee !important;
 }
+/* change the design of popup to a dark theme when user switches the dark mode on */
+[data-theme="dark"] .swal-modal{
+  background-color: #111;
+  
+}
+[data-theme="dark"] .swal-title{
+  color: white;
+}
+[data-theme="dark"] .swal-text{
+  color: white;
+}
