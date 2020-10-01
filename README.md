@@ -24,6 +24,10 @@ This is simple Number guessing game. Play and have fun.
 4. Make your pull request
 5. Resolve conflicts if any
 
+### Note 
+
+Please do not commit to master branch. please merge your branch with development branch.
+
 ## About Me:
 
 [Click Here](https://hemendrakhatik.github.io/Portfolio/) to know about me.
