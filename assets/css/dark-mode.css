@@ -14,14 +14,24 @@
 [data-theme="dark"] .bg-black {
   background-color: #eee !important;
 }
-/* change the design of popup to a dark theme when user switches the dark mode on */
-[data-theme="dark"] .swal-modal{
-  background-color: #111;
+
+[data-theme="dark"] .plane {
+  background-color: #111 !important;
+  color: #eee; 
+}
+
+[data-theme="dark"] .plane {
+  background-color: #333 !important;
   
 }
-[data-theme="dark"] .swal-title{
-  color: white;
+
+[data-theme="dark"] .plane {
+  background-color: #000 !important;
+  
 }
-[data-theme="dark"] .swal-text{
-  color: white;
+
+[data-theme="dark"] .plane {
+  background-color: rgba(238, 238, 238, 0.568) !important;
+  color: rgb(0, 0, 0) !important; 
 }
+

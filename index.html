@@ -3,6 +3,7 @@
   <head>
     <title>Memory Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="./assets/js/index.js"></script>
     <!-- Bootstrap -->
     <link
@@ -20,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/cube.css">
 
   </head>
   <body>
@@ -62,9 +64,29 @@
             <button class="btn btn-primary" onclick="replay();">REPLAY</button>
           </div>
           <!-- logo -->
-          <img class="col-md-3 col-sm-6 offset-md-2 img-adjust" src="./assets/images/logo.png" />
-      </div>
-    </div>
+          <div class="col-md-3 col-md-3 offset-md-2 img-adjust" button onclick="toggleShape()" id="container" >
+            <div id="stage">
+              <div id="shape" class="cube backfaces">
+                <!-- <img class="col-md-5 col-md-6 offset-md-2 img-adjust" src="./assets/images/logo.png" /> -->
+                <div class="plane one">1</div>
+                <div class="plane two">2</div>
+                <div class="plane three">3</div>
+                <div class="plane four">4</div>
+                <div class="plane five">5</div>
+                <div class="plane six">6</div>
+                  <div class="plane seven">7</div>
+                  <div class="plane eight">8</div>
+                  <div class="plane nine">9</div>
+                  <div class="plane ten">10</div>
+                  <div class="plane eleven">11</div>
+                  <div class="plane twelve">12</div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    
     <footer class="site-footer">
       <div class="container">
         <div class="row">
@@ -92,6 +114,7 @@
         </div>
       </div>
     </footer>
+    <script src="assets/js/cube.js"></script>
     <script src="assets/js/dark-mode-switch.min.js"></script>
     <script src="assets/js/dark-mode-switch.js"></script>
   </body>
