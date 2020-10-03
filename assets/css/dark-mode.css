@@ -14,6 +14,7 @@
 [data-theme="dark"] .bg-black {
   background-color: #eee !important;
 }
+
 [data-theme="dark"] .plane {
   background-color: #111 !important;
   color: #eee; 

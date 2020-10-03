@@ -4,7 +4,8 @@
 
 
 ## About Project:
-This is simple Number guessing game. Play and have fun.
+This is simple Sequence guessing game.Play and have fun.
+
 ## Technology Stack Used In This Project
 * HTML/CSS
 * JavaScript
