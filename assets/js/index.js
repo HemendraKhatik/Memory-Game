@@ -12,9 +12,18 @@ function randomNumberOrSequence()
 
 function randomRange() {
   // Generating Random 6 digit number
-  const guessNumber = Math.floor(
-    Math.random() * (987666 - 456722 + 1) + 456722,
-  );
+  var guessNumber;
+  var diff=Math.ceil(Math.random()*2);
+  if(diff==1){
+    // Generating Random 6 digit number
+    guessNumber = Math.floor((Math.random() * 900000 )+100000 );
+    // Adding class colorChanger to the number  
+    document.querySelector("#number").classList.add("colorChanger");  
+  }
+  else if(diff==2){
+    // Generating Random 7 digit number
+    guessNumber = Math.floor((Math.random() * 9000000 )+1000000 );  
+  }
   // Storing generated number in local storage
   localStorage.setItem("guessNumber", guessNumber);
   // Displaying the number
@@ -119,4 +128,5 @@ function replay() {
   document.querySelector("#number").innerHTML = "";
   document.querySelector("#message").innerHTML = "";
   document.querySelector("#generate").disabled = "";
+  document.querySelector("#number").classList.remove("colorChanger");  
 }
