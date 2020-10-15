@@ -46,6 +46,7 @@ function randomRange() {
     document.querySelector("#first_div").style.display = "none";
     document.querySelector("#Second_div").style.display = "block";
     document.querySelector("#userInput").value = "";
+    document.querySelector("#userInput").focus();
   }, 5000);
 }
 
@@ -83,6 +84,7 @@ function randomSequence() {
     document.querySelector("#first_div").style.display = "none";
     document.querySelector("#Second_div").style.display = "block";
     document.querySelector("#userInput").value = "";
+    document.querySelector("#userInput").focus();
   }, 5000);
 }
 

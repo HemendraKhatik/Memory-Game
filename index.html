@@ -56,6 +56,7 @@
               placeholder="Enter Your Guess"
               autofocus
               required
+              onkeydown="if(event.keyCode==13)check();"
             />
             <br />
             <button class="btn btn-primary" id="guess" onclick="check();">
