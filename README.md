@@ -4,7 +4,7 @@
 
 
 ## About Project:
-This is simple Sequence guessing game.Play and have fun.
+Sequence guessing game.
 
 ## Technology Stack Used In This Project
 * HTML/CSS
@@ -29,6 +29,3 @@ This is simple Sequence guessing game.Play and have fun.
 
 Please do not commit to master branch. please merge your branch with development branch.
 
-## About Me:
-
-[Click Here](https://hemendrakhatik.github.io/Portfolio/) to know about me.
